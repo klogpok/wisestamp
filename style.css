@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #1bbc9b;
+    font-family: 'Lato', sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 300px;
+    position: relative;
+    background: #E9F1F3;
+    margin: 40px auto; 
+    padding: 20px;  
+    border-radius: 5px;
+}
+
+form::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: -9px;
+    width: 18px;
+    height: 18px;
+    background: #E9F1F3;
+    transform: rotate(45deg);
+}
+
+input {
+    width: 100%; 
+    box-sizing: border-box;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;    
+    font-family: 'Lato', sans-serif; 
+    font-size: 15px;      
+}
+
+input[type="submit"] {
+    margin-bottom: 15px;
+    background: #1BBC9B;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: rgb(172, 172, 172);
+}
+
+.name, .pass {
+    position: relative;    
+}
+
+.name::after {
+    content: "\f007";
+    font-family: FontAwesome;
+    font-size: 18px;
+    color: rgb(172, 172, 172);
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+.pass::after {
+    content: "\f023";
+    font-family: FontAwesome;
+    font-size: 18px;
+    color: rgb(172, 172, 172);
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+.form_link {
+    font-family: 'Lato', sans-serif; 
+    font-size: 14px; 
+    text-align: center;    
+}
+
+.form_link a {
+    color: rgb(172, 172, 172);
+}
+
+.login {
+    position: relative;
+}
+
+.spinner {
+    display: none;
+    position: absolute;
+    top: 8px;
+    left: 90px;
+    font-size: 8px;
+}
+
+.logo {
+    width: 90px;
+    position: absolute;
+    top: 0;
+    left: -120px;
+}
+
+.logo img {
+    margin-bottom: 10px;
+}
+
+.logo p {
+    margin:0;    
+}
+
+.white {
+    color: white;
+    font-size: 14px;
+}
+
+.grey {
+    color: rgb(229, 226, 226);;
+    font-size: 13px;
+}
+
+
+@media only screen and (max-width: 500px) {
+    main {
+        align-items: flex-end;
+        padding-bottom: 20px;
+    }
+
+    
+
+    form::before {
+        content: "";
+        position: absolute;
+        top: -9px;
+        left: 171px;
+        width: 18px;
+        height: 18px;
+        background: #E9F1F3;
+        transform: rotate(45deg);
+    }
+
+    .logo {
+        top: -170px;
+        left: 149px;
+    }
+}
+
