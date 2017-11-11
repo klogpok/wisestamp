@@ -50,6 +50,7 @@ input[type="submit"] {
     background: #1BBC9B;
     color: white;
     cursor: pointer;
+    border: none;
 }
 
 input[type="text"]::placeholder,
@@ -111,6 +112,9 @@ input[type="password"]::placeholder {
 }
 
 .logo img {
+    display: block;
+    width: 80px;
+    height: auto;
     margin-bottom: 10px;
 }
 
@@ -134,13 +138,11 @@ input[type="password"]::placeholder {
         padding-top: 70px;
     }
 
-    
-
     form::before {
         content: "";
         position: absolute;
         top: -9px;
-        left: 171px;
+        left: 169px;
         width: 18px;
         height: 18px;
         background: #E9F1F3;
@@ -149,7 +151,7 @@ input[type="password"]::placeholder {
 
     .logo {
         top: -170px;
-        left: 149px;
+        left: 137px;
     }
 }
 
